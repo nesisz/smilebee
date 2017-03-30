@@ -286,6 +286,7 @@
 		  `time` int(11) DEFAULT NULL,
 		  `s_ip` varchar(20) DEFAULT NULL,
 		  `type` varchar(50) DEFAULT NULL,
+		  `error_count` int(11) DEFAULT NULL,
 		  PRIMARY KEY (`No`),
 		  KEY `s_ip` (`s_ip`),
 		  KEY `type` (`type`)
