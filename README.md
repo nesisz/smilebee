@@ -291,6 +291,9 @@
 		  KEY `s_ip` (`s_ip`),
 		  KEY `type` (`type`)
 		) ENGINE=MyISAM DEFAULT CHARSET=euckr;
+		
+		## 설정테이블 필드길이 수정
+		ALTER TABLE `setting` CHANGE `states` `states` VARCHAR(20)  CHARACTER SET euckr  COLLATE euckr_korean_ci  NOT NULL  DEFAULT '';
 		```
 	4. crontab 에 등록
 		
